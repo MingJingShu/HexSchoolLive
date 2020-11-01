@@ -1,0 +1,179 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: "my_font";
+  src: local(Noto sans-serif);
+  unicode-range: U+4E00-9FFF, U+2E80-2EFF; }
+
+@font-face {
+  font-family: "my_font";
+  src: local(Roboto);
+  unicode-range: U+0020-007F; }
+
+body {
+  font-family: "my_font"; }
+
+.container {
+  width: 1200px;
+  margin: 0 auto; }
+
+.content {
+  font-size: 24px; }
+  .content .content-title {
+    line-height: 45px;
+    border-bottom: 1px gray solid;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+    font-size: 32px; }
+  .content .content-subtitle {
+    padding-left: 16px;
+    font-size: 24px;
+    vertical-align: top;
+    color: #a00404;
+    text-transform: uppercase;
+    font-weight: bold; }
+
+.content-item {
+  margin-bottom: 24px;
+  line-height: 36px; }
+  .content-item:last-child {
+    margin-bottom: 0; }
+
+.title {
+  font-size: 80px;
+  border-bottom: 2px black solid;
+  padding-bottom: 20px;
+  padding-top: 47px;
+  line-height: 96px; }
+
+.avatar {
+  margin: 45px 0; }
+
+/*----------------*\
+  every page layout
+\*----------------*/
+.profile,
+.education,
+.skills,
+.workExperience,
+.contactMe {
+  margin-bottom: 72px; }
+  .profile:last-child,
+  .education:last-child,
+  .skills:last-child,
+  .workExperience:last-child,
+  .contactMe:last-child {
+    margin-bottom: 0; }
+
+.education .content-item {
+  line-height: 34px; }
+
+.skills .container {
+  width: 996px; }
+
+.skills .content-ul {
+  display: inline-block;
+  padding-left: 24px;
+  margin-top: 24px;
+  text-align: left;
+  line-height: 28px;
+  border-left: 1px #96a9c4 solid;
+  padding-left: 24px; }
+  .skills .content-ul li {
+    margin-bottom: 20px; }
+    .skills .content-ul li:last-child {
+      margin-bottom: 0; }
+
+.workExperience .work-img {
+  display: block;
+  margin: 8px 0; }
+
+.workExperience .content-ul {
+  margin-top: 16px;
+  margin-left: 16px; }
+  .workExperience .content-ul li {
+    margin-bottom: 24px; }
+  .workExperience .content-ul li:last-child {
+    margin-bottom: 0; }
+  .workExperience .content-ul li p {
+    font-size: 20px;
+    line-height: 30px; }
+
+.contactMe img {
+  cursor: pointer; }
+  .contactMe img.contact-fb:hover {
+    -webkit-filter: invert(43%) sepia(69%) saturate(2206%) hue-rotate(163deg) brightness(97%) contrast(101%);
+    filter: invert(43%) sepia(69%) saturate(2206%) hue-rotate(163deg) brightness(97%) contrast(101%); }
+  .contactMe img.contact-ig:hover {
+    -webkit-filter: invert(36%) sepia(9%) saturate(3148%) hue-rotate(282deg) brightness(103%) contrast(87%);
+    filter: invert(36%) sepia(9%) saturate(3148%) hue-rotate(282deg) brightness(103%) contrast(87%); }
+  .contactMe img.contact-line:hover {
+    -webkit-filter: invert(41%) sepia(63%) saturate(1991%) hue-rotate(90deg) brightness(98%) contrast(108%);
+    filter: invert(41%) sepia(63%) saturate(1991%) hue-rotate(90deg) brightness(98%) contrast(108%); }
+
+.contactMe .content-ul li {
+  margin-bottom: 16px; }
+
+.contactMe .content-ul li:last-child {
+  margin-bottom: 0; }
+
+.skills,
+.contactMe {
+  background: #415165;
+  padding-top: 20px;
+  padding-bottom: 36px; }
+  .skills .container,
+  .contactMe .container {
+    text-align: center;
+    color: #fff; }
+  .skills .content-title,
+  .contactMe .content-title {
+    border-bottom-color: #fff; }
+  .skills .content-subtitle,
+  .contactMe .content-subtitle {
+    color: #fff; }

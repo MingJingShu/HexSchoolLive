@@ -1,0 +1,178 @@
+@import "./reset.scss";
+
+//font-china
+@font-face {
+  font-family: "my_font";
+  src: local(Noto sans-serif);
+  unicode-range: U+4E00-9FFF, U+2E80-2EFF;
+}
+
+//font-English
+@font-face {
+  font-family: "my_font";
+  src: local(Roboto);
+  unicode-range: U+0020-007F;
+}
+
+body {
+  font-family: "my_font";
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.content {
+  font-size: 24px;
+  .content-title {
+    line-height: 45px;
+    border-bottom: 1px gray solid;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+    font-size: 32px;
+  }
+  .content-subtitle {
+    padding-left: 16px;
+    font-size: 24px;
+    vertical-align: top;
+    color: #a00404;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+
+
+.content-item {
+  margin-bottom: 24px;
+  line-height: 36px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.title {
+  font-size: 80px;
+  border-bottom: 2px black solid;
+  padding-bottom: 20px;
+  padding-top: 47px;
+  line-height: 96px;
+}
+
+.avatar {
+  margin: 45px 0;
+}
+
+/*----------------*\
+  every page layout
+\*----------------*/
+.profile,
+.education,
+.skills,
+.workExperience,
+.contactMe {
+  margin-bottom: 72px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.education {
+  .content-item {
+    line-height: 34px;
+  }
+}
+
+.skills {
+  .container {
+    width: 996px;
+  }
+  .content-ul {
+    display: inline-block;
+    padding-left: 24px;
+    margin-top: 24px;
+    text-align: left;
+    line-height: 28px;
+    border-left: 1px #96a9c4 solid;
+    padding-left: 24px;
+    li {
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.workExperience {
+  .work-img {
+    display: block;
+    margin: 8px 0;
+  }
+  .content-ul {
+    margin-top: 16px;
+    margin-left: 16px;
+    li {
+      margin-bottom: 24px;
+    }
+    li:last-child {
+      margin-bottom: 0;
+    }
+
+    li p {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
+
+.contactMe {
+
+  img{
+    cursor: pointer;
+ 
+  &.contact-fb:hover{
+    filter: invert(43%) sepia(69%) saturate(2206%) hue-rotate(163deg)
+    brightness(97%) contrast(101%);
+  }
+  &.contact-ig:hover{
+    filter: invert(36%) sepia(9%) saturate(3148%) hue-rotate(282deg)
+    brightness(103%) contrast(87%);
+  }
+  &.contact-line:hover{
+    filter: invert(41%) sepia(63%) saturate(1991%) hue-rotate(90deg)
+          brightness(98%) contrast(108%);
+  }
+}
+  .content-ul {
+    li {
+      margin-bottom: 16px;
+    }
+    li:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.skills,
+.contactMe {
+  background: #415165;
+  padding-top: 20px;
+  padding-bottom: 36px;
+
+  .container {
+    text-align: center;
+    color: #fff;
+  }
+  .content-title {
+    border-bottom-color: #fff;
+  }
+  .content-subtitle {
+    color: #fff;
+  }
+}
+
+
