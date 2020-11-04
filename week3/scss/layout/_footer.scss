@@ -1,0 +1,74 @@
+.footer{
+    background: #AA0601;
+    padding-top: 36px;
+    padding-bottom: 28px;
+    .link-wrap{
+        margin-bottom: 22px;
+    }
+    .nav li{
+        margin-right: 48px;
+        line-height:22px;
+        font-size: 16px;
+        @include text-hover;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    .media li{
+        margin-right: 32px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    .media .fb:hover{
+        filter: invert(40%) sepia(22%) saturate(4335%) hue-rotate(199deg) brightness(95%) contrast(89%);
+    }
+    .media .ig:hover{
+        filter: invert(27%) sepia(41%) saturate(2622%) hue-rotate(248deg) brightness(88%) contrast(98%);
+    }
+    .media .line:hover{
+        filter: invert(43%) sepia(82%) saturate(1756%) hue-rotate(89deg) brightness(97%) contrast(104%);
+    }
+    .contact-Information{
+        padding-bottom: 20px;
+        border-bottom: 1px solid #fff;
+        .icon-mail{
+            margin-right: 12px;
+        }
+        .icon-phone{
+            margin-right: 25px;
+        }
+    }
+   
+    .contact-Information li{
+        line-height:48px;
+        font-size: 36px;
+        color: #fff;
+       
+        &:first-child{
+            margin-bottom: 17px;
+        }
+    }
+    .copyright-wrap{
+        padding-top: 24px;
+    }
+    .copyright{
+        color: #fff;
+        font-size: 16px;
+    }
+    .logo{
+        margin-right: 38px;
+    }
+    .terms{
+        color: #fff;
+        li{
+            line-height: 20px;
+            font-size: 14px;
+            @include text-hover;
+        }
+        li:first-child{
+            margin-right:62px;
+        }
+    }
+    
+}
