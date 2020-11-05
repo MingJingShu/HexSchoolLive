@@ -506,6 +506,10 @@ h1 {
     line-height: 43px;
     font-size: 32px; } }
 
+@media (max-width: 819px) {
+  .index-contactUs .container {
+    width: 80%; } }
+
 @media (max-width: 768px) {
   h1 {
     line-height: 2.813rem;
