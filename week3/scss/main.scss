@@ -7,30 +7,112 @@
 /*pages*/
 @import "./pages/index.scss";
 
+body {
+  font-family: "my_font";
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1110px;
+}
+h1 {
+  font-size: 3rem;
+  line-height: 4.188rem;
+}
+.d-flex {
+  display: flex;
+}
+.flex-d-row-reverse {
+  flex-direction: row-reverse;
+}
+.justify-content-s-between {
+  justify-content: space-between;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.align-items-center {
+  align-items: center;
+}
+@media (max-width: 1200px) {
+    html{
+        font-size: 12px;
+    }
+  .header {
+    padding: 29.5px 40px;
+  }
+  .index-features ul {
+    padding: 0 10%;
+    flex-wrap: wrap;
+  }
+  .index-features li {
+    width: 40%;
+  }
+  .index-classicProduct ul {
+    padding: 0 40px;
+  }
+  .index-classicProduct .flex-d-row-reverse {
+    flex-direction: row;
+  }
+  .index-classicProduct h2.margin-r {
+    margin-right: 0;
+    margin-left: 30px;
+  }
+  .index-classicProduct h2 {
+    line-height: 37px;
+    font-size: 28px;
+  }
+  .index-classicProduct .productImg {
+    width: 390px;
+    height: 168px;
+  }
+  .index-jointNameDesign h1 {
+    margin-bottom: 32px;
+  }
+  .index-jointNameDesign ul {
+    padding: 0 40px;
+  }
+  .index-jointNameDesign li {
+    .product-1,
+    .product-2 {
+      // width: 330px;
+      height: 280px;
+    }
+    .product-1:before,
+    .product-2:before {
+      line-height: 43px;
+      font-size: 32px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  
+  h1 {
+    line-height: 2.813rem;
+    font-size: 2rem;
+  }
+  .index-jointNameDesign{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .index-customerPush{
+      padding-bottom: 36px;
+  }
+  .index-customerPush ul {
+    padding: 0 40px;
+    flex-wrap: wrap;
+  }
+  .index-customerPush li{
+    width: calc(50% - 15px);
+    margin-bottom: 28px;
+  }
+}
 
-body{
-    font-family: "my_font";
-}
-a{
-    text-decoration: none;
-    color: #fff;
-}
-.container{
-    margin: 0 auto;
-    max-width: 1110px;
-}
-.d-flex{
-    display: flex;
-}
-.flex-d-row-reverse{
-    flex-direction: row-reverse;
-}
-.justify-content-s-between{
-    justify-content: space-between;
-}
-.justify-content-center{
-    justify-content: center;
-}
-.align-items-center{
-    align-items: center;
+@media (max-width: 400px) {
+  .index-features li {
+    width: 100%;
+  }
 }
