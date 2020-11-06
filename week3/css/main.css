@@ -46,7 +46,7 @@ img {
   max-width: 100%;
   height: auto; }
 
-div {
+div, input, textarea {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
@@ -470,8 +470,6 @@ h1 {
 @media (max-width: 1200px) {
   html {
     font-size: 12px; }
-  .header {
-    padding: 29.5px 40px; }
   .index-features ul {
     padding: 0 10%;
     -ms-flex-wrap: wrap;
@@ -488,12 +486,23 @@ h1 {
   .index-classicProduct h2.margin-r {
     margin-right: 0;
     margin-left: 30px; }
-  .index-classicProduct h2 {
-    line-height: 37px;
-    font-size: 28px; }
   .index-classicProduct .productImg {
     width: 390px;
     height: 168px; }
+  .footer {
+    padding: 36px 40px 28px 40px; }
+  .footer .logo {
+    display: none; } }
+
+@media (max-width: 768px) {
+  .header {
+    padding: 29.5px 40px; }
+  .index-jointNameDesign {
+    padding-top: 40px;
+    padding-bottom: 40px; }
+  .index-classicProduct h2 {
+    font-size: 28px;
+    line-height: 37px; }
   .index-jointNameDesign h1 {
     margin-bottom: 32px; }
   .index-jointNameDesign ul {
@@ -504,19 +513,7 @@ h1 {
   .index-jointNameDesign li .product-1:before,
   .index-jointNameDesign li .product-2:before {
     line-height: 43px;
-    font-size: 32px; } }
-
-@media (max-width: 819px) {
-  .index-contactUs .container {
-    width: 80%; } }
-
-@media (max-width: 768px) {
-  h1 {
-    line-height: 2.813rem;
-    font-size: 2rem; }
-  .index-jointNameDesign {
-    padding-top: 40px;
-    padding-bottom: 40px; }
+    font-size: 32px; }
   .index-customerPush {
     padding-bottom: 36px; }
   .index-customerPush ul {
@@ -525,7 +522,30 @@ h1 {
     flex-wrap: wrap; }
   .index-customerPush li {
     width: calc(50% - 15px);
-    margin-bottom: 28px; } }
+    margin-bottom: 28px; }
+  .index-customerPush img {
+    width: 100%; }
+  .index-contactUs .container {
+    width: 80%; }
+  .index-contactUs button {
+    max-width: 350px;
+    width: 80%; }
+  .footer .nav li {
+    margin-right: 40px; }
+  .footer .media li {
+    margin-right: 24px;
+    width: 22px; }
+  .footer .contact-Information li {
+    line-height: 26px;
+    font-size: 20px; }
+  .footer .contact-Information .icon-phone {
+    width: 24px;
+    margin-right: 12px; }
+  .footer .contact-Information .icon-mail {
+    width: 32px;
+    margin-right: 8px; }
+  .footer .terms li:first-child {
+    margin-right: 24px; } }
 
 @media (max-width: 400px) {
   .index-features li {
