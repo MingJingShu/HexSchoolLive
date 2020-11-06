@@ -96,6 +96,9 @@
         vertical-align: middle;
         margin-left: 4px;
     }
+    .w-daimond,.w-sun,.w-thunder{
+        display: none;
+    }
     .productImg{
         width: 635px;
     }
@@ -240,6 +243,13 @@
         display: inline-block;
         width: auto;
         margin-bottom: 42px;
+        display: flex;
+        align-items: baseline;
+    }
+    .btnLab input{
+        width: auto;
+        display: inline-block;
+        margin: 0;
     }
     input,textarea{
         width: 100%;
