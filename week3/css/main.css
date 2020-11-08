@@ -479,6 +479,9 @@ h1 {
   -ms-flex-pack: center;
   justify-content: center; }
 
+.index-classicProduct h2 .w-daimond, .index-classicProduct h2 .w-sun, .index-classicProduct h2 .w-thunder {
+  display: none; }
+
 @media (max-width: 1200px) {
   html {
     font-size: 12px; }

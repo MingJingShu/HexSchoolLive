@@ -37,6 +37,13 @@ h1 {
 .justify-content-center {
   justify-content: center;
 }
+.index-classicProduct h2{
+  .w-daimond,.w-sun,.w-thunder{
+    display: none  ;
+  }
+} 
+
+
 
 @media (max-width: 1200px) {
   html {
