@@ -4,16 +4,16 @@
     margin: 0 auto;
     background:url(../images/index/banner.png)no-repeat;
     background-position: center;
-    h1{
+    h2{
         color:$text-primary;
         text-align: right;
         font-weight: bold;
     }
-    h1 p{
+    h2 p{
         font-size: 4rem;
         line-height: 5.625rem;
     }
-    h1 span{
+    h2 span{
         line-height:3.125rem;
         font-size: 2.25rem;
     }
@@ -25,7 +25,7 @@
     ul{
         align-items:baseline;
     }
-    h1{
+    h2{
         color:$text-primary;
         text-align: center;
         font-weight: bold;
@@ -68,13 +68,13 @@
         box-shadow: 0px 0px 4px black;
         transition: all .2s;
     }
-    h1{
+    h2{
         font-weight: bold;
         text-align: center;
         color: $text-primary;
         margin-bottom: 60px;
     }
-    h2{
+    h3{
         line-height:3.938rem;
         font-size: 3rem;
         font-style:italic;
@@ -84,23 +84,23 @@
         margin-left: 30px;
         white-space: nowrap;
     }
-    h2.margin-r{
+    h3.margin-r{
         margin-left: 0px;
         margin-right: 30px;
     }
-    h2 img{
+    h3 img{
         display: inline-block;
         vertical-align: middle;
     }
-    h2 span{
+    h3 span{
         vertical-align: middle;
         margin-left: 4px;
     }
-    .w-daimond,.w-sun,.w-thunder{
+    .diamond-w,.sun-w,.thunder-w{
         display: none;
     }
     .productImg{
-        width: 635px;
+        width: 60%;
     }
 }
 .index-jointNameDesign{
@@ -109,7 +109,7 @@
     background-position: center;
     padding-top: 64px;
     padding-bottom: 80px;
-    h1{
+    h2{
         font-weight: bold;
         color: #fff;
         text-align: center;
@@ -179,7 +179,7 @@
 .index-customerPush{
     padding-top: 64px;
     padding-bottom: 64px;
-    h1{
+    h2{
         font-weight: bold;
         text-align: center;
         color: $text-primary;
@@ -216,13 +216,13 @@
     .container{
         max-width: 730px;
     }
-    h1{
+    h2{
         color: #000;
         font-weight: bold;
         text-align: center;
         margin-bottom: 24px;
     }
-    h2{
+    h3{
         font-weight: bold;
         line-height: 30px;
         font-size: 20px;
@@ -276,5 +276,11 @@
         border: none;
         color: #fff;
         cursor: pointer;
+        transition: all .2s;
+        &:hover{
+            letter-spacing: 5px;
+            box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+            transition: all .2s;
+        }
     }
 }
