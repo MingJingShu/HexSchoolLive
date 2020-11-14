@@ -13,6 +13,7 @@
         background-size: 0 16px;
         background-position: center bottom;
         white-space: nowrap;
+        z-index: 1;
     }
     li.active,li:active{
         background-image: linear-gradient(#AA0601, #AA0601);
@@ -48,6 +49,9 @@
         vertical-align: middle;
         color: #000;
     }
+    span,p{
+        pointer-events: none;
+    }
 }
 .product-banner{
     margin-bottom: 88px;
@@ -69,8 +73,13 @@
         font-weight: bold;
     }
 }
-.product-mainList-1{
+.product-mainList{
     flex-wrap: wrap;
+    &.box3{
+        li{
+            width:calc(100% / 3 - 15px); 
+        }
+    }
     li{
         width: calc(100% / 4 - 15px);
         overflow: hidden;
@@ -121,9 +130,19 @@
         border: 1px solid #555555;
         padding: 12px;
         color: #555555;
+        cursor: pointer;
+        &:hover{
+            color: #fff;
+            background: #000;
+            border-color: #000;
+        }
     }
     .prev,.next{
-        font-size: bold;
+        font-weight: bold;
+    }
+    .next{
+        background: #F2F2F2;
     }
 }
+
 

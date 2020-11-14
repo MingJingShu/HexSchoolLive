@@ -461,7 +461,8 @@ div, input, textarea {
     position: relative;
     background-size: 0 16px;
     background-position: center bottom;
-    white-space: nowrap; }
+    white-space: nowrap;
+    z-index: 1; }
   .product-nav li.active, .product-nav li:active {
     background-image: -webkit-gradient(linear, left top, left bottom, from(#AA0601), to(#AA0601));
     background-image: -webkit-linear-gradient(#AA0601, #AA0601);
@@ -495,6 +496,8 @@ div, input, textarea {
     font-size: 42px;
     vertical-align: middle;
     color: #000; }
+  .product-nav span, .product-nav p {
+    pointer-events: none; }
 
 .product-banner {
   margin-bottom: 88px; }
@@ -513,36 +516,38 @@ div, input, textarea {
     font-size: 32px;
     font-weight: bold; }
 
-.product-mainList-1 {
+.product-mainList {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
-  .product-mainList-1 li {
+  .product-mainList.box3 li {
+    width: calc(100% / 3 - 15px); }
+  .product-mainList li {
     width: calc(100% / 4 - 15px);
     overflow: hidden;
     position: relative;
     margin-bottom: 104px; }
-    .product-mainList-1 li:last-child {
+    .product-mainList li:last-child {
       margin-bottom: 0; }
-  .product-mainList-1 li a {
+  .product-mainList li a {
     position: relative; }
-  .product-mainList-1 li a:before {
+  .product-mainList li a:before {
     content: ""; }
-  .product-mainList-1 p.name, .product-mainList-1 p.money {
+  .product-mainList p.name, .product-mainList p.money {
     line-height: 36px;
     font-size: 24px; }
-  .product-mainList-1 p.money {
+  .product-mainList p.money {
     color: #AA0601; }
-  .product-mainList-1 .colors .color-1 {
+  .product-mainList .colors .color-1 {
     background: #5F3E2D; }
-  .product-mainList-1 .colors .color-2 {
+  .product-mainList .colors .color-2 {
     background: #B75929; }
-  .product-mainList-1 .colors div {
+  .product-mainList .colors div {
     width: 24px;
     height: 24px;
     border-radius: 4px;
     margin-right: 8px;
     cursor: pointer; }
-    .product-mainList-1 .colors div:last-child {
+    .product-mainList .colors div:last-child {
       margin-right: 0; }
 
 .product-pages {
@@ -553,9 +558,16 @@ div, input, textarea {
     line-height: 24px;
     border: 1px solid #555555;
     padding: 12px;
-    color: #555555; }
+    color: #555555;
+    cursor: pointer; }
+    .product-pages li:hover {
+      color: #fff;
+      background: #000;
+      border-color: #000; }
   .product-pages .prev, .product-pages .next {
-    font-size: bold; }
+    font-weight: bold; }
+  .product-pages .next {
+    background: #F2F2F2; }
 
 body {
   font-family: "my_font"; }
