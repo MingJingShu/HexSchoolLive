@@ -1,0 +1,26 @@
+.layout-banner {
+  height: 304px;
+  background: url(../images/location/banner.png) no-repeat;
+  background-size: cover; }
+  .layout-banner .container {
+    height: 100%;
+    line-height: 304px; }
+  .layout-banner .wrap {
+    vertical-align: bottom;
+    display: inline-block;
+    line-height: 1; }
+  .layout-banner p {
+    line-height: 90px;
+    font-size: 64px;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle; }
+  .layout-banner .location-icon {
+    background: url(../images/location/icon-location.svg) no-repeat;
+    background-size: cover;
+    width: 42px;
+    height: 60px;
+    margin-bottom: 14px;
+    margin-left: 20px;
+    display: inline-block;
+    vertical-align: middle; }

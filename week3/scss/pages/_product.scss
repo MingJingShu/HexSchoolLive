@@ -1,3 +1,37 @@
+.product-sunGlasses,.product-functional{
+    display: none;
+}
+.product-optical .product-banner{
+    .banner-1{
+        background: url(../images/product/banner-1.png)no-repeat;
+        background-size: cover;
+    }
+    .banner-2{
+        background: url(../images/product/banner-2.png)no-repeat;
+        background-size: cover;
+    }
+}
+.product-sunGlasses .product-banner{
+    .banner-3{
+        background: url(../images/product/banner-3.png)no-repeat;
+        background-size: cover;
+    }
+    .banner-4{
+        background: url(../images/product/banner-4.png)no-repeat;
+        background-size: cover;
+    }
+}
+.product-functional .product-banner{
+    .banner-5{
+        background: url(../images/product/banner-5.png)no-repeat;
+        background-size: cover;
+    }
+    .banner-6{
+        background: url(../images/product/banner-6.png)no-repeat;
+        background-size: cover;
+    }
+}
+
 .product-nav{
     text-transform: uppercase;
    
@@ -14,6 +48,7 @@
         background-position: center bottom;
         white-space: nowrap;
         z-index: 1;
+        cursor: pointer;
     }
     li.active,li:active{
         background-image: linear-gradient(#AA0601, #AA0601);
@@ -49,15 +84,17 @@
         vertical-align: middle;
         color: #000;
     }
-    span,p{
-        pointer-events: none;
-    }
 }
 .product-banner{
     margin-bottom: 88px;
     li{
         background: #000;
         width: calc(100% / 2 - 15px);
+        height: 309px;
+    }
+    li div{
+        width: 100%;
+        height: 100%;
     }
 }
 .product-typeName{

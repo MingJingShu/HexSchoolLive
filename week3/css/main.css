@@ -178,6 +178,42 @@ div, input, textarea {
     .footer .terms li:first-child {
       margin-right: 62px; }
 
+.layout-banner {
+  height: 304px;
+  background: url(../images/location/banner.png) no-repeat;
+  background-size: cover; }
+  .layout-banner .container {
+    height: 100%;
+    line-height: 304px; }
+  .layout-banner .wrap {
+    vertical-align: bottom;
+    display: inline-block;
+    line-height: 1; }
+  .layout-banner p {
+    line-height: 90px;
+    font-size: 64px;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle; }
+  .layout-banner .location-icon {
+    background: url(../images/location/icon-location.svg) no-repeat;
+    background-size: cover;
+    width: 42px;
+    height: 60px;
+    margin-bottom: 14px;
+    margin-left: 20px;
+    display: inline-block;
+    vertical-align: middle; }
+  .layout-banner .qa-icon {
+    background: url(../images/q&a/icon-help.svg) no-repeat;
+    background-size: cover;
+    width: 58px;
+    height: 58px;
+    margin-bottom: 10px;
+    margin-left: 24px;
+    display: inline-block;
+    vertical-align: middle; }
+
 /*pages*/
 .index-banner {
   max-width: 1920px;
@@ -448,6 +484,33 @@ div, input, textarea {
       -o-transition: all .2s;
       transition: all .2s; }
 
+.product-sunGlasses, .product-functional {
+  display: none; }
+
+.product-optical .product-banner .banner-1 {
+  background: url(../images/product/banner-1.png) no-repeat;
+  background-size: cover; }
+
+.product-optical .product-banner .banner-2 {
+  background: url(../images/product/banner-2.png) no-repeat;
+  background-size: cover; }
+
+.product-sunGlasses .product-banner .banner-3 {
+  background: url(../images/product/banner-3.png) no-repeat;
+  background-size: cover; }
+
+.product-sunGlasses .product-banner .banner-4 {
+  background: url(../images/product/banner-4.png) no-repeat;
+  background-size: cover; }
+
+.product-functional .product-banner .banner-5 {
+  background: url(../images/product/banner-5.png) no-repeat;
+  background-size: cover; }
+
+.product-functional .product-banner .banner-6 {
+  background: url(../images/product/banner-6.png) no-repeat;
+  background-size: cover; }
+
 .product-nav {
   text-transform: uppercase; }
   .product-nav li {
@@ -462,7 +525,8 @@ div, input, textarea {
     background-size: 0 16px;
     background-position: center bottom;
     white-space: nowrap;
-    z-index: 1; }
+    z-index: 1;
+    cursor: pointer; }
   .product-nav li.active, .product-nav li:active {
     background-image: -webkit-gradient(linear, left top, left bottom, from(#AA0601), to(#AA0601));
     background-image: -webkit-linear-gradient(#AA0601, #AA0601);
@@ -496,14 +560,16 @@ div, input, textarea {
     font-size: 42px;
     vertical-align: middle;
     color: #000; }
-  .product-nav span, .product-nav p {
-    pointer-events: none; }
 
 .product-banner {
   margin-bottom: 88px; }
   .product-banner li {
     background: #000;
-    width: calc(100% / 2 - 15px); }
+    width: calc(100% / 2 - 15px);
+    height: 309px; }
+  .product-banner li div {
+    width: 100%;
+    height: 100%; }
 
 .product-typeName {
   text-align: center;
@@ -568,6 +634,132 @@ div, input, textarea {
     font-weight: bold; }
   .product-pages .next {
     background: #F2F2F2; }
+
+.location-banner {
+  height: 304px;
+  background: url(../images/location/banner.png) no-repeat;
+  background-size: cover; }
+  .location-banner .container {
+    height: 100%;
+    line-height: 304px; }
+  .location-banner .wrap {
+    vertical-align: bottom;
+    display: inline-block;
+    line-height: 1; }
+  .location-banner p {
+    line-height: 90px;
+    font-size: 64px;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle; }
+  .location-banner .location-icon {
+    background: url(../images/location/icon-location.svg) no-repeat;
+    background-size: cover;
+    width: 42px;
+    height: 60px;
+    margin-bottom: 14px;
+    margin-left: 20px;
+    display: inline-block;
+    vertical-align: middle; }
+
+.location-option {
+  line-height: 45px;
+  margin-top: 16px;
+  margin-bottom: 32px; }
+  .location-option label {
+    line-height: 33px;
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle; }
+
+.location-area {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 272px; }
+  .location-area .box {
+    width: calc(100% / 3 - 30px);
+    margin-right: calc(90px / 2);
+    margin-left: -2px;
+    margin-bottom: 32px; }
+    .location-area .box:nth-child(3n) {
+      margin-right: 0; }
+
+.location-area .areaBg-1, .location-area .areaBg-2, .location-area .areaBg-3, .location-area .areaBg-4, .location-area .areaBg-5 {
+  background: url(../images/location/area-bg.png) no-repeat;
+  background-size: cover;
+  height: 224px;
+  width: 100%; }
+
+.location-area h3 {
+  border: 1px solid #00000020;
+  line-height: 60px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #212529;
+  padding-left: 24px; }
+
+.location-area .area-content {
+  padding-left: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border: 1px solid #00000020; }
+  .location-area .area-content li {
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    margin-bottom: 8px; }
+    .location-area .area-content li:last-child {
+      margin-bottom: 0; }
+  .location-area .area-content p {
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: bold; }
+  .location-area .area-content span {
+    display: inline-block; }
+    .location-area .area-content span.icon-phone {
+      width: 28px;
+      height: 21px;
+      background: url(../images/location/icon-phone.svg) no-repeat;
+      background-size: cover;
+      margin-right: 12px; }
+    .location-area .area-content span.icon-clock {
+      width: 20px;
+      height: 20px;
+      background: url(../images/location/icon-clock.svg) no-repeat;
+      background-size: cover;
+      margin-left: 3px;
+      margin-right: 15px; }
+    .location-area .area-content span.icon-map {
+      width: 20px;
+      height: 20px;
+      background: url(../images/location/icon-map.svg) no-repeat;
+      background-size: cover;
+      margin-left: 3px;
+      margin-right: 15px; }
+
+.location-area button {
+  background: #000;
+  color: #fff;
+  font-size: 19px;
+  font-weight: bold;
+  width: 100%;
+  height: 66px;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s; }
+  .location-area button:hover {
+    text-shadow: 0px 0px 2px;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s; }
+  .location-area button:active {
+    text-shadow: 0px 0px 0px;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s; }
 
 body {
   font-family: "my_font"; }

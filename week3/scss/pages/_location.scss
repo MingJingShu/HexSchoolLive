@@ -1,0 +1,137 @@
+.location-banner{
+    height: 304px;
+    background: url(../images/location/banner.png)no-repeat;
+    background-size: cover;
+    .container{
+        height: 100%;
+        line-height: 304px;
+    }
+    .wrap{
+        vertical-align: bottom;
+        display: inline-block;
+        line-height: 1;
+    }
+    p{
+        line-height: 90px;
+        font-size: 64px;
+        font-weight: bold;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .location-icon{
+        background: url(../images/location/icon-location.svg)no-repeat;
+        background-size: cover;
+        width: 42px;
+        height: 60px;
+        margin-bottom: 14px;
+        margin-left: 20px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+.location-option{
+    line-height: 45px;
+    margin-top: 16px;
+    margin-bottom: 32px;
+
+    label{
+        line-height: 33px;
+        font-size: 24px;
+        font-weight: bold;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+.location-area{
+    flex-wrap: wrap;
+    margin-bottom: 272px;
+    .box{
+        width: calc(100% / 3 - 30px);
+        margin-right: calc(90px / 2);
+        margin-left: -2px;
+        margin-bottom: 32px;
+        &:nth-child(3n){
+            margin-right: 0;
+        }
+    }
+}
+.location-area {
+    .areaBg-1,.areaBg-2,.areaBg-3,.areaBg-4,.areaBg-5{
+        background: url(../images/location/area-bg.png)no-repeat;
+        background-size: cover;
+        height: 224px;
+        width: 100%;
+    }
+    h3{
+        border: 1px solid #00000020;
+        line-height: 60px;
+        font-size: 24px;
+        font-weight: bold;
+        color: #212529;
+        padding-left: 24px;
+    }
+}
+.location-area .area-content{
+    padding-left: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border: 1px solid #00000020;
+    li{
+        align-items: baseline;
+        margin-bottom: 8px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    p{
+        line-height:30px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    span{
+        
+        display: inline-block;
+        &.icon-phone{
+            width: 28px;
+            height: 21px;
+            background: url(../images/location/icon-phone.svg)no-repeat;
+            background-size: cover;
+            margin-right: 12px;
+        }
+        &.icon-clock{
+            width: 20px;
+            height: 20px;
+            background: url(../images/location/icon-clock.svg)no-repeat;
+            background-size: cover;
+            margin-left: 3px;
+            margin-right: 15px;
+        }
+        &.icon-map{
+            width: 20px;
+            height: 20px;
+            background: url(../images/location/icon-map.svg)no-repeat;
+            background-size: cover;
+            margin-left: 3px;
+            margin-right: 15px;
+        }
+    }
+}
+.location-area button{
+    background: #000;
+    color: #fff;
+    font-size: 19px;
+    font-weight: bold;
+    width: 100%;
+    height: 66px;
+    border: none;
+    cursor: pointer;
+    transition: all .2s;
+    &:hover{
+        text-shadow: 0px 0px 2px;
+        transition: all .2s;
+    }
+    &:active{
+        text-shadow: 0px 0px 0px;
+        transition: all .2s;
+    }
+}

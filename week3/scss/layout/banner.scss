@@ -1,0 +1,41 @@
+.layout-banner{
+    height: 304px;
+    background: url(../images/location/banner.png)no-repeat;
+    background-size: cover;
+    .container{
+        height: 100%;
+        line-height: 304px;
+    }
+    .wrap{
+        vertical-align: bottom;
+        display: inline-block;
+        line-height: 1;
+    }
+    p{
+        line-height: 90px;
+        font-size: 64px;
+        font-weight: bold;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .location-icon{
+        background: url(../images/location/icon-location.svg)no-repeat;
+        background-size: cover;
+        width: 42px;
+        height: 60px;
+        margin-bottom: 14px;
+        margin-left: 20px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .qa-icon{
+        background: url(../images/q&a/icon-help.svg)no-repeat;
+        background-size: cover;
+        width: 58px;
+        height: 58px;
+        margin-bottom: 10px;
+        margin-left: 24px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
