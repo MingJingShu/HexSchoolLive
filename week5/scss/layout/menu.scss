@@ -1,6 +1,7 @@
 .menu{
-    padding: 32px 0 0 32px;
+    padding: 32px 0 32px 32px;
     background: #EDF4EE;
+    min-width: 296px;
     height: 100vh;
     .logo{
         width: 151px;
@@ -11,9 +12,11 @@
         cursor: pointer;
     }
     li{
-        line-height: 30px;
+        line-height: 32px;
         margin-bottom: 26px;
         color: #000;
+        font-weight: bold;
+        position: relative;
         &:last-child{
             margin-bottom: 0;
         }
@@ -23,7 +26,42 @@
         padding-bottom: 2px;
         margin-right: 16px;
     }
-    li a:hover{
-        color: #2A8356;
+    li:hover,li.active,li:active{
+        &:before{
+            content: '';
+            width: 4px;
+            height: 32px;
+            background: #2A8356;
+            position: absolute;
+            left: -31px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        a{
+            color: #2A8356;
+        }
+       
+        
+    }
+    .avatar{
+        .my-avatar{
+            background: url(../images/avatar.jpeg)no-repeat;
+            background-size: cover;
+            background-position: center center;
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            margin-right: 16px;
+        }
+        h2{
+            line-height: 19px;
+            font-size:1rem;
+            margin: 0;
+        }
+        p{
+            line-height:17px;
+            font-size: 14px;
+            margin: 0;
+        }
     }
 }

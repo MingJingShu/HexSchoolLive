@@ -12,8 +12,10 @@
 }
 
 .menu {
-  padding: 32px 0 0 32px;
+  padding: 32px 0 32px 32px;
   background: #EDF4EE;
+  min-width: 296px;
+  height: 100vh;
 }
 
 .menu .logo {
@@ -26,9 +28,11 @@
 }
 
 .menu li {
-  line-height: 30px;
+  line-height: 32px;
   margin-bottom: 26px;
   color: #000;
+  font-weight: bold;
+  position: relative;
 }
 
 .menu li:last-child {
@@ -41,8 +45,42 @@
   margin-right: 16px;
 }
 
-.menu li a:hover {
+.menu li:hover:before, .menu li.active:before, .menu li:active:before {
+  content: '';
+  width: 4px;
+  height: 32px;
+  background: #2A8356;
+  position: absolute;
+  left: -31px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.menu li:hover a, .menu li.active a, .menu li:active a {
   color: #2A8356;
+}
+
+.menu .avatar .my-avatar {
+  background: url(../images/avatar.jpeg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin-right: 16px;
+}
+
+.menu .avatar h2 {
+  line-height: 19px;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.menu .avatar p {
+  line-height: 17px;
+  font-size: 14px;
+  margin: 0;
 }
 
 .material-icons {
