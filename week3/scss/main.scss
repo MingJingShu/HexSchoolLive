@@ -5,11 +5,13 @@
 @import "./layout/header.scss";
 @import "./layout/footer.scss";
 @import "./layout/banner.scss";
+@import "./layout/pages.scss";
 /*pages*/
 @import "./pages/index.scss";
 @import "./pages/_product.scss";
-@import "./pages/location";
-@import "./pages/QandA";
+@import "./pages/location.scss";
+@import "./pages/QandA.scss";
+@import "./pages/blog.scss";
 
 body {
   font-family: "my_font";
