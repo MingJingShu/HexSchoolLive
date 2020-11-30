@@ -1,0 +1,16 @@
+
+@import './base/font.scss';
+//layout
+@import './layout/menu.scss';
+//vendor
+@import'./vendor/material_icon.scss';
+
+/*-------*\
+    參數
+\*-------*/
+$green :#2A8356;
+@import './bootstrap/bootstrap.scss';
+
+body{
+    font-family: "my_font";
+}

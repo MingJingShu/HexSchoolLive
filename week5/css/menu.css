@@ -1,0 +1,35 @@
+.menu {
+  padding: 32px 0 0 32px;
+  background: #EDF4EE;
+  height: 100vh;
+}
+
+.menu .logo {
+  width: 151px;
+  height: 40px;
+  background: url(./../images/logo-ANSWER.svg) no-repeat;
+  background-size: cover;
+  margin-bottom: 32px;
+  cursor: pointer;
+}
+
+.menu li {
+  line-height: 30px;
+  margin-bottom: 26px;
+  color: #000;
+}
+
+.menu li:last-child {
+  margin-bottom: 0;
+}
+
+.menu li i {
+  vertical-align: middle;
+  padding-bottom: 2px;
+  margin-right: 16px;
+}
+
+.menu li a:hover {
+  color: #2A8356;
+}
+/*# sourceMappingURL=menu.css.map */
